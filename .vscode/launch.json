@@ -1,0 +1,41 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos 
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Run android mobile",
+            "type": "cordova",
+            "request": "launch",
+            "platform": "android",
+            "target": "device",
+            "sourceMaps": true,
+            "cwd": "${workspaceFolder}",
+            "env":{
+                "CORDOVA_ANDROID_GRADLE_DISTRIBUTION_URL":"https://services.gradle.org/distributions/gradle-4.1-all.zip",
+                "ANDROID_HOME":"/Users/upw/Library/Android/sdk"
+            }
+        },
+        {
+            "name": "Run android emulator",
+            "type": "cordova",
+            "request": "launch",
+            "platform": "android",
+            "target": "",
+            "sourceMaps": true,
+            "cwd": "${workspaceFolder}",
+            "env":{
+                "CORDOVA_ANDROID_GRADLE_DISTRIBUTION_URL":"https://services.gradle.org/distributions/gradle-4.1-all.zip",
+                "ANDROID_HOME":"/Users/upw/Library/Android/sdk"
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/node_modules/.bin/gulp"
+        }
+    ]
+}
