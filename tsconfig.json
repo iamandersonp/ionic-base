@@ -12,7 +12,13 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
-    "lib": ["es2018", "dom"]
+    "lib": ["es2018", "dom"],
+    "paths": {
+      "@shared/*": ["src/shared/*"],
+      "@pages/*": ["src/app/pages/*"],
+      "@services/*": ["src/core/services/*"],
+      "@core/*": ["src/core/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
