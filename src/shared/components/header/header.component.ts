@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Input() tittle: string;
+  @Input() color: string;
   @Input() back?: boolean;
 
   constructor() {}
