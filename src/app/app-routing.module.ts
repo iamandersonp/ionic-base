@@ -23,6 +23,13 @@ const routes: Routes = [
           import('@pages/folder/folder.module').then(
             (m) => m.FolderPageModule
           )
+      },
+      {
+        path: 'animations',
+        loadChildren: () =>
+          import(
+            '@pages/animations/animations.module'
+          ).then((m) => m.AnimationsPageModule)
       }
     ]
   }

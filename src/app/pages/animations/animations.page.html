@@ -1,0 +1,36 @@
+<app-header
+  #AppHeader
+  [tittle]="'Animations'"
+  [color]="'primary'"
+  [back]="true"
+></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button expand="full" (click)="startLoad()">
+    Load
+    <ion-icon
+      name="reload"
+      slot="end"
+      #loadingIcon
+    ></ion-icon>
+  </ion-button>
+  <ion-button expand="full" (click)="addToCart()" #cartBtn>
+    Add to cart
+  </ion-button>
+
+  <ion-fab
+    vertical="top"
+    horizontal="end"
+    slot="fixed"
+    edge
+  >
+    <ion-fab-button #cartFabBtn color="secondary">
+      <ion-icon name="cart"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <div
+    #box
+    [ngStyle]="{'width': '100px', 'height': '100px', 'background': 'var(--ion-color-secondary'}"
+  ></div>
+</ion-content>
